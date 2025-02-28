@@ -1,4 +1,180 @@
-# Open Deep Research
+# Brikka Open Deep Research
+
+A powerful tool for AI-powered, automated deep research on any topic. This tool uses LangGraph to coordinate complex research workflows that include web search, report planning, research, and report generation.
+
+Based on a fork of [Open Deep Research](https://github.com/langchain-ai/open_deep_research) by [LangChain](https://github.com/langchain-ai).
+
+## Features
+
+- **Automated Research**: Input a topic and get a complete research report
+- **Interactive Feedback**: Review and refine the initial research plan
+- **File Input Support**: Include content from files in your research queries
+- **Formatted Output**: Clean, readable output for plans and reports
+- **Report Export**: Automatic saving of final reports in markdown format
+
+## Installation
+
+### Prerequisites
+
+- Python 3.11+
+- pip
+
+### Setup
+
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:Brikka-Labs/brikka_open_deep_research.git
+   cd brikka_open_deep_research
+   ```
+
+2. Create and activate a virtual environment:
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate 
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -e .
+   ```
+
+4. Set up your API keys:
+   - Copy `.env.example` to `.env`
+   - Add your API keys to the `.env` file:
+     ```
+     OPENAI_API_KEY=your_openai_api_key
+     TAVILY_API_KEY=your_tavily_api_key
+     LANGCHAIN_API_KEY=your_langchain_api_key
+     ```
+
+## Usage
+
+Run the script with:
+
+```bash
+python test_deep_research.py
+```
+
+### Basic Research Flow
+
+1. Enter your research topic
+2. Review the automatically generated report plan
+3. Provide feedback to refine the plan (optional)
+4. Wait for the complete report to be generated
+5. Find your report saved as a markdown file
+
+### Input Options
+
+The script supports several advanced input methods:
+
+#### 1. Direct File Input
+
+You can use a file as the entire input:
+
+```
+What topic would you like to research?
+> file:my_topic.txt
+```
+
+#### 2. Embedded File References
+
+Include file content within your text by using:
+
+```
+What topic would you like to research?
+> Research the impact of {{file:data/subtopic.txt}} on global economics
+```
+
+File references can be in various formats:
+- `{{file:path/to/file.txt}}`
+- `'{{file:path/to/file.txt}}'`
+- `"{{file:path/to/file.txt}}"`
+
+#### 3. Multi-line Input
+
+For the feedback step, you can provide multi-line input:
+
+```
+Enter your feedback:
+I'd like the report to focus more on:
+1. Recent developments
+2. Economic implications
+3. Future prospects
+EOF
+```
+
+#### 4. File Appending
+
+After entering text, you can choose to append file content:
+
+```
+Would you like to append content from a file? (yes/no): yes
+Enter the file path: additional_instructions.txt
+```
+
+### Output Files
+
+The final report is saved as a markdown file in the current directory. The filename follows the pattern:
+
+```
+report_topic_name_thread-id.md
+```
+
+## Troubleshooting
+
+### API Key Issues
+
+If you encounter API key errors:
+- Check that your `.env` file contains valid API keys
+- Ensure the keys have proper permissions
+- Check for any whitespace or special characters in the keys
+
+### File Not Found Errors
+
+When including file references:
+- Make sure the path is correct (relative to where you run the script)
+- Try using absolute paths if relative paths don't work
+- Check file permissions
+
+### Debug Mode
+
+To see more information about file processing and input handling, enable debug mode:
+```python
+topic = get_user_input("Your prompt", allow_file=True, allow_combined=True, debug=True)
+```
+
+## Examples
+
+### Basic Topic
+
+```
+What topic would you like to research?
+> The impact of artificial intelligence on healthcare
+```
+
+### Complex Topic with File References
+
+```
+What topic would you like to research?
+> I need a report comparing {{file:technologies.txt}} with a focus on their applications in {{file:industries.txt}}
+```
+
+### Providing Feedback
+
+```
+Would you like to provide feedback on the report plan? (yes/no)
+> yes
+
+Enter your feedback:
+The plan looks good, but I'd like to add sections on:
+1. Regulatory considerations
+2. Implementation costs
+3. Case studies from {{file:case_studies.txt}}
+EOF
+```
+
+
+# Open Deep Research (original README)
  
 Open Deep Research is a web research assistant that generates comprehensive reports on any topic following a workflow similar to [OpenAI](https://openai.com/index/introducing-deep-research/) and [Gemini](https://blog.google/products/gemini/google-gemini-deep-research/) Deep Research. However, it allows you to customize the models, prompts, report structure, search API, and research depth. Specifically, you can customize:
 
