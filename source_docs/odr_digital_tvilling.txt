@@ -1,0 +1,64 @@
+
+Bakgrund
+En digitaltvilling av Nordion Energi (Nordion) naturgasnät (inklusive biometan) efterfrågas för att kunna simulera framtida förändringar och nutida/framtida händelser.
+
+Gasnät
+Nordion äger idag gasnät som benämns som TSO (Swedegas) och som DSO (WEUM). Den digitaltvilling ska innefatta båda dessa typer av gasnät, se Bild 1.
+
+
+Bild 1: Utbredning av Nordions gasnät. Blå färg TSO-nätet, grön färg DSO-nät.
+
+
+Kravspecifikation
+De krav som en digitaltvilling behöver uppnå utan inbördes rangordning är följande:
+
+Identisk kopia av redan befintligt gasnät
+Markera känsliga platser/områden
+Tryckfallsberäkning
+Kapacitetsfrågor
+Beräkning av metanutsläpp
+Hantering av gasläckor
+Olika sökfält beroende på källans uppgifter
+Skriva in adress, gata/or, områden, koordinater, anläggningskoder
+Vilka ventiler/komponenter som bör stängas och deras position
+Markering av påverkat område
+Möjligheten att exportera en lista på påverkade kunder, deras anläggningar och kontaktuppgifter
+Möjligheten till automatiserad kontakt
+Simulera spridningsavståndet för att identifiera när gasen når en riskfri koncentration.
+Det ska vara användarvänligt
+Kunna projektera framtida tillbyggnader av gasnätet och föreslå möjlig placering, se Bild 2.
+Finns känsliga platser längs den planerade vägen
+Tryckfall
+Kapacitet
+Komponenter
+Prisindikation
+
+
+
+Bild 2: Visualisering av krav H. Lila=TSO-nätet, Orange=MR-station, Grön=DSO-nät, Blå=Befintlig kund/er, Röd=Känsliga platser som ej ska eller får bebyggas, Vit=Ny potentiell inmatning eller utmatnings kund, Svart=Möjlig gasnäts dragning för ny potentiell kund/er.
+
+
+Nordions IT system
+Inom Nordion används många olika typer av system som information kan hämtas ifrån, nedan har system punktats upp med en kortbeskrivning vad det kan användas till:
+
+Gasten
+Kartsystem som innehåller DSO och TSO gasnätets placering och komponenter.
+BFU
+Kunddata hanteras här ifrån
+MFU
+Mätvärden för debitering samlas in här
+SCADA
+Värden från givare övervakas här
+SmartSim
+QT för TSO, DSO-Malmö, DSO-Laholm och DSO-Bjuv. Används för att beräkna värmevärde för tillkopplade värmevärdesområden. Linepack beräkning för TSO-nätet utförs dagligen.
+Qlik Sense
+Data från olika databaser samlas i Qlik Sense (QS). Från QS finns sedan olika typer av skapade rapporter, sammanställningar.
+Lime
+Kundärende system, för att kunna skicka ärenden internt och få helhet vad som kunden blivit informerad om
+PFU (Mina Sidor)
+Kunderna kan se förbrukning, fakturor
+Bokningsportalen
+Alla TSO kunder och större kunder från DSO-nät kan lägga sina framtida bokningar från denna sida. Godkännda användare har tillgång till Bokningsportalen via PFU
+
+
+

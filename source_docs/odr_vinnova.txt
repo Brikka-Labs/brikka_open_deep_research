@@ -1,0 +1,23 @@
+Inom denna inriktning finansierar vi samverkansprojekt som med hjälp av metoder inom avancerad digitalisering bidrar till ökad flexibilitet och energieffektivisering för industrins elanvändning. Det kan ske enskilt eller i kluster av industrier i ett geografiskt område. Några exempel på intressanta områden är driftoptimering och beslutsstöd för industrier, gärna i samverkan med olika relevanta aktörer, som kan bidra till en mer optimerad elanvändning lokalt och regionalt.
+
+Inriktningen omfattar inte teknikutveckling för elproduktion, batteriteknik, vätgasproduktion och laddinfrastruktur. Dessa kan dock utgöra viktiga funktioner och datakällor som aktörer behöver för att medverka till att öka industrins optimala och effektiva produktion och elanvändning, inklusive flexibel elanvändning. Inte heller elektrifiering av fordon omfattas, såvida det inte är som en del av ett konkret industriellt sammanhang, till exempel autonoma fordon eller maskiner i en gruva eller en hamn.
+
+Underliggande behov 
+
+Elektrifieringen är en central del av industrins hållbara omställning och fossiloberoende. Eleffektbehovet kan därmed öka dramatiskt i områden där industrier är etablerade, eller önskar etablera sig. När industrier överger fossila bränslen, som har använts som råvara i industriprocesser, ökar användningen av andra mer hållbara energibärare som exempelvis vätgas. Vätgasen framställs via elektrolys, en process som kräver stora mängder el. I andra fall växlar man över från fossilbaserad till elektrifierad industrivärme med till exempel värmepumpar eller ljusbågsugnar. Sammantaget ökar efterfrågan på el när andra energibärare fasas in och ersätter de fossila alternativen.
+
+Idag begränsas industrins elektrifiering av elnätens bristande överföringskapacitet. En begränsande faktor är förmågan att utöka befintliga nätabonnemang samt att erhålla nätanslutning till nya industrianläggningar. När stora förbrukare energieffektiviserar och anpassar elförbrukningen till den momentant tillgängliga elnätskapaciteten frigör det utrymme som ger möjlighet till kortare anslutningstider för nya eller utökade verksamheter.
+
+Avancerad digital teknik, som till exempel artificiell intelligens, kan bidra till att möta industrins behov av att utveckla och implementera modeller för prognoser, beslutsstöd och mer automatiserad styrning. Att på detta sätt uppnå ökad effektivisering och flexibilitet för en eller flera industriella aktörer i geografiska kluster, ökar möjligheten att kunna ansluta till elnätet snabbare och påskynda elektrifieringen.
+
+Förväntade effekter
+
+Projekten förväntas öka möjligheten till flexibel elanvändning hos en eller flera industriella aktörer i ett geografiskt kluster, med fördel i samarbete med olika relevanta parter.
+
+Avancerad digital teknik ska bidra till att drift av industrianläggningar optimeras i realtid med hjälp av modellbaserad styrning. Ofta innebär det att stora mängder data behöver hanteras och analyseras kontinuerligt, till exempel med hjälp av AI/ML-baserade algoritmer och modeller som digitala tvillingar av industrianläggningar och dess sammanhang i energisystemet eller elnätet. 
+
+Digitala modeller kan också byggas för att ge beslutsstöd för styrningen av ett helt kluster av fabriker och andra förbrukare i ett geografiskt område. Det ger möjlighet att anpassa klustrets totala elanvändning till den momentant tillgängliga elnätskapaciteten via prissignaler och andra påverkande faktorer. Projektens resultat ska på så vis göra att fler aktörer och utökad verksamhet kan anslutas till elnätet snabbare, och därmed påskynda industrins elektrifiering.
+
+Digitala lösningar ska genomgående utformas med beaktande av aspekter för resiliens och robusthet, inklusive cybersäkerhet.
+
+Projekt ska bidra till att utveckla och implementera resultat som säkerställer industrins tillgång till den el som behövs, när den behövs till ett rimligt pris.
